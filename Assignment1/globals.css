@@ -1,0 +1,50 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0px;
+  height: 100%;
+}
+/* a blue color as a generic focus style */
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Brown-Regular";
+  src: url("https://anima-uploads.s3.amazonaws.com/projects/6309af124df0c20ccf0bcd43/fonts/brown-regular.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "Brown-Bold";
+  src: url("https://anima-uploads.s3.amazonaws.com/5ad4bfe29ef94d000b456ee7/Brown-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Sofia Pro-SemiBold";
+  src: url("https://anima-uploads.s3.amazonaws.com/5c1264bfc78d8c000a7cd521/Sofia Pro SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Sofia Pro-Light";
+  src: url("https://anima-uploads.s3.amazonaws.com/5c264fd1f83dc8000b2c63f3/Sofia_Pro_Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Sofia Pro-Regular";
+  src: url("https://anima-uploads.s3.amazonaws.com/5c5187824fe4f300099ea24b/Sofia Pro Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Sofia Pro-Medium";
+  src: url("https://anima-uploads.s3.amazonaws.com/5becdbda1ec0b6000bf0ff1b/Sofia Pro Medium [TheFontsMaster.com].otf")
+    format("opentype");
+}
