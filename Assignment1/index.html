@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,8 +8,9 @@
       <link rel="stylesheet" href="globals.css" />
     <link rel="stylesheet" href="styleguide.css" />
     <link rel="stylesheet" href="style.css" />
+    <script src="./index.js"></script>
 </head>
-<body>
+  <body>
     <div class="sign-up-individual">
       <div class="overlap-wrapper">
         <div class="overlap">
@@ -23,66 +25,124 @@
           </div>
           <div class="bg-2"></div>
           <div class="form-filled-no">
-            <div class="form-filled-no-2">
-              <div class="bg-3"><img class="edit-show" src="img/edit-show.svg" /></div>
-              <div class="label"><div class="title">Password</div></div>
-            </div>
+              <div class="form-filled-no-2">
+
+                  <div class="label">
+                      <div class="title">Password</div>
+                      <div class="password-container">
+                          <input type="password" id="password" class="password-input" placeholder="Select">
+                          <span class="toggle-password" onclick="togglePasswordVisibility()">
+                              <i id="eye-icon" class="fa fa-eye"></i>
+                          </span>
+                      </div>
+                  </div>
+              </div>
           </div>
           <div class="form-filled-no-wrapper">
             <div class="form-filled-no-2">
-              <div class="bg-4"></div>
-              <div class="title-wrapper"><div class="title-2">Last Name</div></div>
+                <div class="bg-4"></div>
+                <div class="title-wrapper">
+                    <div class="title-2">Last Name</div>
+                    <!-- Responsive Input Field -->
+                    <div class="input-wrapper">
+                        <input type="text" class="responsive-input" placeholder="Enter your last name">
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="div-wrapper">
-            <div class="form-filled-no-2">
+        </div>
+        <div class="div-wrapper">
+          <div class="form-filled-no-2">
               <div class="bg-4">
-                <img class="img" src="img/u-angle-down-1.svg" />
-                <div class="placeholder">Select here</div>
+                  <!-- Select Dropdown -->
+                  <select class="responsive-select" id="genderSelect">
+                      <option value="" disabled selected>Select Gender</option>
+                      <option value="male">Male</option>
+                      <option value="female">Female</option>
+                      <option value="other">Other</option>
+                  </select>
               </div>
-              <div class="title-wrapper"><div class="title-2">Gender</div></div>
-            </div>
-          </div>
-          <div class="form-filled-no-3">
-            <div class="form-filled-no-2">
-              <div class="bg-4"><div class="placeholder">Enter Weight</div></div>
-              <div class="title-wrapper"><div class="title-2">Weight (KG)</div></div>
-            </div>
-          </div>
-          <div class="form-filled-no-4">
-            <div class="form-filled-no-2">
-              <div class="bg-3">
-                <img class="u-angle-down" src="img/u-angle-down.svg" />
-                <div class="placeholder-2">Select here</div>
+              <div class="title-wrapper">
+                  <div class="title-2">Gender</div>
               </div>
-              <div class="label"><div class="title">Activity Level</div></div>
-            </div>
           </div>
-          <div class="form-filled-no-5">
-            <div class="form-filled-no-2">
-              <div class="bg-4">
-                <img class="img" src="img/u-a-calendar-alt.svg" />
-                <div class="placeholder">Select here</div>
-              </div>
-              <div class="title-wrapper"><div class="title-2">Date of Birth</div></div>
+      </div>
+      
+      <div class="form-filled-no-3">
+        <div class="form-filled-no-2">
+            <div class="bg-4">
+                <!-- Input for Weight -->
+                <input type="number" class="responsive-input" placeholder="Enter Weight (KG)">
             </div>
-          </div>
-          <div class="form-filled-no-6">
-            <div class="form-filled-no-2">
-              <div class="bg-4"><div class="placeholder">Enter height here..</div></div>
-              <div class="title-wrapper"><div class="title-2">Height (CM)</div></div>
+            <div class="title-wrapper">
+                <div class="title-2">Weight (KG)</div>
             </div>
+        </div>
+    </div>
+    
+    <div class="form-filled-no-4">
+      <div class="form-filled-no-2">
+          <div class="bg-3">
+              <img class="u-angle-down" src="img/u-angle-down.svg" />
+              <!-- Select Dropdown for Activity Level -->
+              <select class="responsive-select" id="activitySelect">
+                  <option value="" disabled selected>Select Activity Level</option>
+                  <option value="sedentary">Sedentary</option>
+                  <option value="lightlyActive">Lightly Active</option>
+                  <option value="moderatelyActive">Moderately Active</option>
+                  <option value="veryActive">Very Active</option>
+                  <option value="superActive">Super Active</option>
+              </select>
           </div>
-          <div class="form-focus-no">
-            <div class="overlap-group">
-              <div class="bg-wrapper"><div class="bg-5"></div></div>
-              <div class="placeholder-3">Tolu</div>
-            </div>
-            <div class="title-wrapper"><div class="title-2">First Name</div></div>
+          <div class="label">
+              <div class="title">Activity Level</div>
           </div>
-          <button class="button-default">
-            <div class="button-text-wrapper"><button class="button-text">Register</button></div>
-          </button>
+      </div>
+  </div>
+  
+  <div class="form-filled-no-5">
+    <div class="form-filled-no-2">
+        <div class="bg-4">
+            
+            <!-- Date Input Field -->
+            <input type="date" class="responsive-date" placeholder="Date of Birth">
+        </div>
+        <div class="title-wrapper">
+            <div class="title-2">Date of Birth</div>
+        </div>
+    </div>
+</div>
+
+<div class="form-filled-no-6">
+  <div class="form-filled-no-2">
+      <div class="bg-4">
+          <!-- Input for Height -->
+          <input type="number" class="responsive-input" placeholder="Enter Height (CM)">
+      </div>
+      <div class="title-wrapper">
+          <div class="title-2">Height (CM)</div>
+      </div>
+  </div>
+</div>
+
+<div class="form-focus-no">
+  <div class="overlap-group">
+      <div class="bg-wrapper">
+          <div class="bg-5"></div>
+      </div>
+      <!-- Input for First Name -->
+      <input type="text" class="responsive-input1" placeholder="Tolu">
+  </div>
+  <div class="title-wrapper">
+      <div class="title-2">First Name</div>
+  </div>
+</div>
+
+<button class="button-default">
+    <div class="button-text-wrapper">
+        Register
+    </div>
+</button>
+
           <p class="by-clicking-register">
             <span class="span">By clicking Register, you agree to our </span>
             <span class="text-wrapper-2">Terms of Use</span>

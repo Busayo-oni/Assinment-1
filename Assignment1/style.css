@@ -91,18 +91,57 @@
 .sign-up-individual .form-filled-no-2 {
   position: relative;
   height: 72px;
+  
 }
 
-.sign-up-individual .bg-3 {
-  position: absolute;
-  width: 500px;
-  height: 48px;
-  top: 24px;
-  left: 0;
-  border-radius: 2px;
-  border: 1px solid;
-  border-color: var(--clgray-3);
+/* Your existing CSS styles */
+
+.password-container {
+  position: relative;
+  bottom: -100%;
+  border: none;
+  outline: var(--clgray-3)
+
+
 }
+.password-input {
+  padding-right: 40px; /* Space for the eye icon */
+  width: 100%; /* Adjust width as needed */
+    width: 238px;
+    height: 48px;
+    top: 3px;
+    left: 0;
+    border-radius: 2px;
+    border: 1px solid;
+    border-color: var(--clgray-3);
+    position: relative;
+    width: 100%; /* Take up full width */
+    padding: 8px; /* Adjust padding as needed */
+    border: 1px solid #ccc; /* Add a border */
+     box-sizing: border-box; /* Include padding in width */
+    /* Additional styles as required */
+  }
+
+
+.toggle-password {
+  position: absolute;
+  bottom: 8px;
+  right: 5px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+/* Style for eye icon */
+.fa-eye:before {
+  content: "\f06e"; /* Unicode for eye icon */
+  font-family: FontAwesome; /* Using FontAwesome for the eye icon */
+}
+
+.fa-eye-slash:before {
+  content: "\f070"; /* Unicode for slashed eye icon */
+  font-family: FontAwesome; /* Using FontAwesome for the slashed eye icon */
+}
+
 
 .sign-up-individual .edit-show {
   position: absolute;
@@ -141,9 +180,10 @@
   position: absolute;
   height: 72px;
 }
+/* Your existing CSS styles */
 
-.sign-up-individual .bg-4 {
-  position: absolute;
+/* Additional styles for the input field */
+.responsive-input {
   width: 238px;
   height: 48px;
   top: 24px;
@@ -151,6 +191,21 @@
   border-radius: 2px;
   border: 1px solid;
   border-color: var(--clgray-3);
+  position: absolute;
+  width: 100%; /* Take up full width */
+  padding: 8px; /* Adjust padding as needed */
+  border: 1px solid #ccc; /* Add a border */
+   box-sizing: border-box; /* Include padding in width */
+  /* Additional styles as required */
+}
+
+.input-wrapper {
+  margin-top: 8px; /* Adjust spacing */
+}
+
+.sign-up-individual .bg-4 {
+  
+ 
 }
 
 .sign-up-individual .title-wrapper {
@@ -219,6 +274,21 @@
   left: 760px;
   position: absolute;
   height: 72px;
+  
+}
+/* Your existing CSS styles */
+
+/* Additional styles for the select dropdown */
+.responsive-select {
+  width: 100%; /* Take up full width */
+  height: 50px;
+  padding: 8px; /* Adjust padding as needed */
+  border: 1px solid #ccc; /* Add a border */
+  border-radius: 2px; /* Rounded corners */
+  position: absolute;
+  top: 20px;
+  box-sizing: border-box; /* Include padding in width */
+  /* Additional styles as required */
 }
 
 .sign-up-individual .u-angle-down {
@@ -249,7 +319,22 @@
   left: 1022px;
   position: absolute;
   height: 72px;
+  
 }
+/* Your existing CSS styles */
+
+/* Additional styles for the date input field */
+.responsive-date {
+  width: 238px; /* Take up full width */
+  padding: 16px; /* Adjust padding as needed */
+  border: 1px solid #ccc; /* Add a border */
+  border-radius: 4px; /* Rounded corners */
+  box-sizing: border-box; /* Include padding in width */
+  /* Additional styles as required */
+  position: absolute;
+  top: 20px;
+}
+
 
 .sign-up-individual .form-filled-no-6 {
   width: 238px;
@@ -276,16 +361,22 @@
   border-radius: 2px;
 }
 
-.sign-up-individual .bg-wrapper {
+/* Your existing CSS styles */
+
+/* Additional styles for the input field */
+.responsive-input1 {
+  width: 100%; /* Take up full width */
+  padding: 8px; /* Adjust padding as needed */
+  border: 1px solid var(--clgreen); /* Add a border */
+  border-radius: 4px; /* Rounded corners */
+  box-sizing: border-box; /* Include padding in width */
+  /* Additional styles as required */
   position: absolute;
-  width: 238px;
-  height: 48px;
-  top: 0;
-  left: 0;
-  border-radius: 2px;
-  border: 1px solid;
-  border-color: var(--clgreen);
+  top: 0px;
+  height: 48px
+  
 }
+
 
 .sign-up-individual .bg-5 {
   position: relative;
@@ -316,26 +407,27 @@
 .sign-up-individual .button-default {
   position: absolute;
   width: 500px;
+  top: -50px;
   height: 48px;
-  top: 631px;
-  left: 760px;
+  left: 0px;
   all: unset;
   box-sizing: border-box;
 }
 
 .sign-up-individual .button-text-wrapper {
-  position: relative;
+  position: absolute;
   width: 580px;
+ 
   height: 128px;
-  top: -30px;
-  left: -40px;
+  bottom: 120px;
+  right: 45px;
   background-image: url(./img/bg.svg);
   background-size: 100% 100%;
 }
 
 .sign-up-individual .button-text {
   position: absolute;
-  top: 45px;
+  top: 0px;
   left: 259px;
   font-family: "Sofia Pro-SemiBold", Helvetica;
   font-weight: 600;
@@ -348,7 +440,15 @@
   all: unset;
   box-sizing: border-box;
 }
-
+.button-text-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120%;
+  color: #ffffff;
+  position: relative;
+  
+}
 .sign-up-individual .by-clicking-register {
   position: absolute;
   height: 25px;
@@ -372,17 +472,4 @@
   font-weight: 500;
   color: #2ec4b6;
   text-decoration: underline;
-}
-@media screen and (max-width: 768px) {
-  main {
-      flex-direction: column;
-      align-items: center;
-  }
-
-  .left-sidebar,
-  .right-sidebar,
-  .main-body {
-      flex-basis: 100%;
-      margin-bottom: 20px;
-  }
 }

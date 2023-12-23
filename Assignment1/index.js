@@ -21,3 +21,4 @@ registerButton.addEventListener('click', function() {
     alert('Registration completed!');
     // You can replace the alert with any desired action or function
 });
+  
